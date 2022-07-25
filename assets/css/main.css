@@ -46,3 +46,7 @@
     right: -10px;
     transform: translateY(-120%);
 }
+
+.header__navbar-icon-link {
+    color: var(--white-color);
+}
