@@ -16,6 +16,7 @@
 .header__navbar-item {
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .header__navbar-item,
@@ -28,6 +29,7 @@
 }
 
 .header__navbar-item:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
@@ -44,9 +46,27 @@
     border-left: 2px solid #fb9086;
     height: 12px;
     right: -10px;
-    transform: translateY(-120%);
+}
+
+/* .header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;    
+} */
+
+.header__navbar-list,
+.header__navbar-item {
+    display: inline-flex;
+    align-items: center;
 }
 
 .header__navbar-icon-link {
     color: var(--white-color);
+}
+
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+    text-align: center;
 }
