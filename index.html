@@ -8,14 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="grid">
             <nav class="header__navbar">
                 <ul class="header__navbar-list">
-                    <li class="header__navbar-item header__navbar-item--separate">Vào Cửa Hàng Trên Ứng Dụng Shopee</li>
+                    <li class="header__navbar-item header__navbar-item--separate --active">
+                        Vào Cửa Hàng Trên Ứng Dụng Shopee
+                        <div class="header__qr">
+                            <img src="./assets/img/qrcode.png" alt="QR Code" class="header__qr-img">
+                            <div class="header__apps">
+                                <a href="#" class="header__apps-download">
+                                    <img src="./assets/img/googleplay.png" alt="Google Play" class="header__apps-download">
+                                </a>
+                                <a href="#" class="header__apps-download">
+                                    <img src="./assets/img/appstore.png" alt="App Store" class="header__apps-download">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="header__navbar-item">
                         <span style="cursor: text; color: #fff;">Kết Nối</span>
                         <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-brands fa-facebook"></i></a>

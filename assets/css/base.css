@@ -31,4 +31,14 @@ html {
     flex-wrap: wrap;
 }
 
+/* Amination */
+@keyframes faceIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
