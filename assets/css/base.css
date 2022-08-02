@@ -64,6 +64,10 @@ html {
     display: none;
 }
 
+.modal.open {
+    display: flex;
+}
+
 .modal__overlay {
     position: absolute;
     width: 100%;

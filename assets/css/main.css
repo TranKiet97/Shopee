@@ -239,6 +239,7 @@
     width: 500px;
     border-radius: 5px;
     overflow: hidden;
+    display: none;
 }
 
 .auth-form__container {
@@ -365,4 +366,12 @@
 
 .auth-form__help-help {
     color: #939393;
+}
+
+.js-register-form.open {
+    display: block;
+}
+
+.js-signin-form.open {
+    display: block;
 }
