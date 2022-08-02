@@ -118,7 +118,7 @@
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng Ký</h3>
-                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                        <span class="auth-form__switch-btn js-switch-btn">Đăng Nhập</span>
                     </div>
                     <div class="auth-form__form">
                         <div class="auth-form__group">
@@ -159,7 +159,7 @@
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng Nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                        <span class="auth-form__switch-btn js-switch-btn">Đăng Ký</span>
                     </div>
                     <div class="auth-form__form">
                         <div class="auth-form__group">
@@ -198,11 +198,11 @@
         const signinBtn = document.querySelector('.js-signin')
         const registerBtn = document.querySelector('.js-register')
         const modal = document.querySelector('.js-modal')
+        const authForm = document.querySelector('.auth-form')
         const registerForm = document.querySelector('.js-register-form')
         const signinForm = document.querySelector('.js-signin-form')
-        const returnBtn = document.querySelector('.js-returnBtn')
-        console.log(modal)
-
+        const returnBtn = document.querySelectorAll('.js-returnBtn')
+        const switchBtn = document.querySelectorAll('.js-switch-btn')
         function showSigninForm() {
             modal.classList.add('open');
             signinForm.classList.add('open')
@@ -219,16 +219,29 @@
             modal.classList.remove('open');
             registerForm.classList.remove('open')
         }
+        function hideAuthForm() {
+            modal.classList.remove('open');
+            authForm.classList.remove('open')
+        }
         signinBtn.addEventListener('click', showSigninForm)
         registerBtn.addEventListener('click', showRegisterForm)
-        returnBtn.addEventListener('click', hideSigninForm)
-        returnBtn.addEventListener('click', hideRegisterForm)
+        returnBtn[1].addEventListener('click', hideSigninForm)
+        returnBtn[0].addEventListener('click', hideRegisterForm)
         modal.addEventListener('click', hideSigninForm);
+        modal.addEventListener('click', hideRegisterForm);
         signinForm.addEventListener('click', function(event) {
             event.stopPropagation();
         })
         registerForm.addEventListener('click', function(event) {
             event.stopPropagation();
+        })
+        switchBtn[0].addEventListener('click', function() {
+            hideRegisterForm();
+            showSigninForm();
+        })
+        switchBtn[1].addEventListener('click', function() {
+            hideSigninForm();
+            showRegisterForm();
         })
     </script>
 </body>
