@@ -410,11 +410,11 @@
     position: relative;
     padding: 0 12px;
     display: inline-block;
+    cursor: default;
 }
 
 .header__cart-wrap:hover .header__cart-list {
     color: #ccc;
-    cursor: pointer;
     display: block;
     z-index: 1;
 }
@@ -433,12 +433,14 @@
     border-radius: 2px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     display: none;
+    animation: faceIn ease-in 0.2s;
 }
 
 .header__cart-list::before {
     content: "";
     position: absolute;
     right: 0;
+    cursor: pointer;
     top: -30px;
     border-width: 20px 24px;
     border-style: solid;
@@ -531,6 +533,7 @@
     box-shadow: 0 0 3px #ccc;
     text-decoration: none;
     display: none;
+    animation: faceIn ease-in 0.2s;
 }
 
 .header__search-option::before {
@@ -579,6 +582,7 @@
     box-shadow: 0 0 3px #ccc;
     text-decoration: none;
     display: none;
+    animation: faceIn ease-in 0.2s;
 }
 
 .header__search-history-heading {
