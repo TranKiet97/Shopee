@@ -22,6 +22,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -35,6 +36,17 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.grid__col-2 {
+    padding: 0 12px;
+    width: 16.6667%;
+}
+
+.grid__col-10 {
+    padding: 0 12px;
+    width: 83.3333%;
 }
 
 /* Amination */
