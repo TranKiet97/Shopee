@@ -39,7 +39,7 @@
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item header__navbar-item--has-notify">
                         <a href="" class="header__navbar-item-link">
-                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-solid fa-bell"></i></a>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon far fa-bell"></i></a>
                             Thông Báo
                         </a>
                         <div class="header__notify">
@@ -95,17 +95,38 @@
                             Trợ Giúp
                         </a>
                     </li>
-                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register">Đăng Ký</li>
-                    <li class="header__navbar-item header__navbar-item--strong  js-signin">Đăng Nhập</li>
+                    <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register">Đăng Ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong  js-signin">Đăng Nhập</li> -->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="" alt="avt" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Trần Kiệt</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="#">Tài Khoản Của Tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="#">Địa Chỉ Của Tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="#">Đơn Mua</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="#">Đăng Xuất</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
 
             <!-- Header With Search -->
             <div class="header-with-search">
                 <div class="header__logo">
-                    <svg class="header__logo-img">
+                    <a href="/" class="header__logo-link">
+                        <svg class="header__logo-img">
 
-                    </svg>
+                        </svg>
+                    </a>
                 </div>
 
                 <div class="header__search">
@@ -145,9 +166,75 @@
                 <div class="header__cart">
                     <div class="header__cart-wrap">
                         <i class="fas fa-shopping-cart header__cart-icon"></i>
-                        <div class="header__cart-list header__cart-list--no-cart">
+                        <span class="header__cart-notice">3</span>
+                        <!-- No Cart:  header__cart-list--no-cart -->
+                        <div class="header__cart-list">
                             <img src="" alt="no_cart" class="header__cart-no-cart-img">
-                            <span>Chưa Có Sản Phẩm</span>
+                            <span class="header__cart-no-cart-msg">Chưa Có Sản Phẩm</span>
+
+                            <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="" alt="product" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ Kem Đặc Trị Vùng Nách</h5>
+                                            <div class="header___cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item--qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân Loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="" alt="product" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ Kem Đặc Trị Vùng Nách</h5>
+                                            <div class="header___cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item--qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân Loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="" alt="product" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ Kem Đặc Trị Vùng Nách</h5>
+                                            <div class="header___cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item--qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân Loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- <button class="header__cart-view-cart btn btn--primary">Xem Giỏ Hàng</button> -->
+                            <a href="#" class="btn btn--primary header__cart-view-cart">Xem Giỏ Hàng</a>
                         </div>
                     </div>
                 </div>
