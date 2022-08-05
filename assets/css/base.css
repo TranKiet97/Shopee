@@ -36,16 +36,21 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0 -5px;
 }
 
 .grid__col-2 {
-    padding: 0 12px;
+    padding: 0 5px;
     width: 16.6667%;
 }
 
+.grid__col-2-10 {
+    padding: 0 5px;
+    width: 20%;
+}
+
 .grid__col-10 {
-    padding: 0 12px;
+    padding: 0 5px;
     width: 83.3333%;
 }
 
@@ -169,6 +174,7 @@ html {
     background-color: var(--white-color);
     list-style: none;
     display: none;
+    z-index: 1;
 }
 
 .select-input:hover .select-input__list {
@@ -186,3 +192,36 @@ html {
 .select-input__link:hover {
     color: var(--primary-color);
 }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+} 
+
+.pagination-item {
+    margin: 0 14px;
+} 
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active:hover .pagination-item__link{
+    background-color: #fb6445;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+} 
